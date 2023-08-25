@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/project.html</link><atom:link href="https://tahsintariq.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Projects</title><link>https://tahsintariq.github.io/project.html</link></image><item><title>Game of life in Rust</title><link>https://tahsintariq.github.io/project/game-of-life.html</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/project/game-of-life.html</guid><description>&lt;div class="container-lg">
+&lt;div class="col-lg-12">
+&lt;h2 class="mt-5 text-left heading-color">Game of life in Rust and Webassembly&lt;/h2>
+&lt;p class="text-left">This is an implementation of &lt;a
+href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life&lt;/a>. Here I've used
+&lt;a href="https://docs.rs/fixedbitset/0.4.0/fixedbitset/">&lt;code>fixedbitset&lt;/code>&lt;/a> to minimize data
+transfer between javascript and webassembly.
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="container-lg">
+&lt;div class="col-lg-12 ">
+&lt;div class="mt-5">
+&lt;!-- Dropdown HTML -->
+&lt;select name="Render Resolution" id="rez">
+&lt;option value="" selected="selected">Render Resolution&lt;/option>
+&lt;option value="1k">1080p&lt;/option>
+&lt;option value="2k">1620p&lt;/option>
+&lt;option value="4k">2160p&lt;/option>
+&lt;/select>
+&lt;!-- dropdown end -->
+&lt;div class="text-right col" id="fps">&lt;/div>
+&lt;canvas class="col" id="game-of-life">&lt;/canvas>
+&lt;/div>
+&lt;div class="row px-4 g-2">
+&lt;div class="row align-middle col-6 p-3">
+&lt;div class="col-2 text-center">Speed&lt;/div>
+&lt;div class="col">
+&lt;input type="range" min="1" max="10" value="1" class="slider border col" id="range">
+&lt;/div>
+&lt;/div>
+&lt;button class="p-3 col" id="play-pause">&lt;/button>
+&lt;button class="p-3 col" id="reset">Reset&lt;/button>
+&lt;button class="p-3 col" id="dead">Dead Cells&lt;/button>
+&lt;/div>
+&lt;h2 class="mt-5 text-left heading-color">Controls&lt;/h2>
+&lt;p class="text-left">
+Use the slider to control the speed of the game in steps per frame from 1 to 10.
+&lt;/p>
+&lt;p class="text-left">
+Pause, reset the board or kill all the cells in the board with the buttons
+&lt;/p>
+&lt;p class="text-left">
+If you're on a computer,
+&lt;ul>&lt;code>CLICK&lt;/code> to toggle the state of a cell.&lt;/ul>
+&lt;ul>&lt;code>CTRL+CLICK&lt;/code> to insert a &lt;a
+href="https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)">Glider&lt;/a>.&lt;/ul>
+&lt;ul>&lt;code>SHIFT+CLICK&lt;/code> to insert a &lt;a href="https://www.conwaylife.com/wiki/Pulsar">Pulser&lt;/a>.&lt;/ul>
+&lt;ul>&lt;code>CTRL+SHIFT+CLICK&lt;/code> to insert &lt;a href="https://conwaylife.com/wiki/Gosper_glider_gun">Gosper's
+Glider Gun&lt;/a>.
+&lt;/ul>
+&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Hybrid nanoporous materials for the separation of fluid mixtures</title><link>https://tahsintariq.github.io/project/hybrid-nanoporous-materials.html</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/project/hybrid-nanoporous-materials.html</guid><description>&lt;p>Update will be posted here.&lt;/p></description></item></channel></rss>

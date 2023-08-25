@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/</link><atom:link href="https://tahsintariq.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Tahsin Tariq Banna</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/</link></image><item><title>Example Talk</title><link>https://tahsintariq.github.io/talk/example-talk.html</link><pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/talk/example-talk.html</guid><description>&lt;div class="alert alert-note">
+&lt;div>
+Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in slides feature.
+&lt;/div>
+&lt;/div>
+&lt;p>Slides can be added in a few ways:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Create&lt;/strong> slides using Wowchemy&amp;rsquo;s &lt;a href="https://wowchemy.com/docs/managing-content/#create-slides" target="_blank" rel="noopener">&lt;em>Slides&lt;/em>&lt;/a> feature and link using &lt;code>slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
+&lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
+&lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>example title</title><link>https://tahsintariq.github.io/news/2023-phd-offer.html</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/news/2023-phd-offer.html</guid><description>&lt;p>&lt;strong>more example&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>example list 1&lt;/li>
+&lt;li>example list 2&lt;/li>
+&lt;li>example list 3&lt;/li>
+&lt;/ul></description></item><item><title>GEMM: A Graph Embedded Model for Memorability Prediction</title><link>https://tahsintariq.github.io/publication/2023-gemm_memorability.html</link><pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2023-gemm_memorability.html</guid><description>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/62146852/232325513-e9de077e-49d3-4ce0-b090-6360054c55ca.png" alt="gemm_architecture" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p style="text-align:center"> Figure. The GEMM Architecture &lt;/p></description></item><item><title>Actions, not gestures: contextualising embodied controller interactions in immersive virtual reality</title><link>https://tahsintariq.github.io/example/2021-ratcliffe-et-al-actions.html</link><pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2021-ratcliffe-et-al-actions.html</guid><description/></item><item><title>Not Very Effective: Validity Issues of the Effectance in Games Scale</title><link>https://tahsintariq.github.io/example/2021-ballou-et-al-not-very-effective.html</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2021-ballou-et-al-not-very-effective.html</guid><description/></item><item><title>Are You Open? A Content Analysis of Transparency and Openness Guidelines in HCI Journals</title><link>https://tahsintariq.github.io/example/2021-ballou-et-al-are-you-open.html</link><pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2021-ballou-et-al-are-you-open.html</guid><description/></item><item><title>The Hidden Intricacy of Loot Box Design: A Granular Description of Random Monetized Reward Features</title><link>https://tahsintariq.github.io/example/2020-ballou-et-al-hidden.html</link><pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2020-ballou-et-al-hidden.html</guid><description/></item><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle-game.html</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle-game.html</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
+&lt;h3 id="features">Features&lt;/h3>
+&lt;ul>
+&lt;li>Uses the A* algorithm to find the shortest way to solve the puzzle&lt;/li>
+&lt;li>You can choose any image to show in the tiles. It will replace the numbers though.&lt;/li>
+&lt;li>The blank tile can also be controlled using hand gestures. It was trained using supervised learning on a set of over 5000 photos.&lt;/li>
+&lt;/ul>
+&lt;h3 id="controls">Controls&lt;/h3>
+&lt;div style="display:flex">
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+↑
+&lt;/div>
+&lt;div ALIGN=Center>
+← ↓ →
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Arrow keys
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+✋
+&lt;/div>
+&lt;div ALIGN=Center>
+👈 👇 👉
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Hand Gestures (using camera)
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+W
+&lt;/div>
+&lt;div ALIGN=Center>
+A S D
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Keyboard keys
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;/div>
+&lt;style>
+*.videoWrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+}
+*.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+*.grid{
+display: grid;
+place-items:center;
+width: 100%;
+}
+&lt;/style>
+&lt;h3 id="game">Game&lt;/h3>
+&lt;style> iframe{ border: none; } &lt;/style>
+&lt;div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/EightPuzzle"
+data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;!-- &lt;div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/EightPuzzle"
+data-position="center center">
+&lt;/iframe>
+&lt;/div> -->
+&lt;h3 id="code">Code&lt;/h3>
+&lt;p>Here&amp;rsquo;s the code for A* path finding algorithm that solves the puzzle:&lt;/p>
+&lt;!-- &lt;div class="alert alert-note">
+&lt;div>
+A Markdown callout is useful for displaying notices, hints, or definitions to your readers.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- &lt;style>
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* .gist-file */
+/* .gist-data {max-height: 700px; max-width: auto;} */
+.gistContainer {width: 75%; margin: 0 auto;}
+&lt;/style> -->
+&lt;!-- &lt;div class = "gistContainer">
+&lt;script src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js">&lt;/script>
+&lt;/div> -->
+&lt;!-- &lt;script src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js">&lt;/script> -->
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span> &lt;span class="nx">AStar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">v2&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">function&lt;/span> &lt;span class="nx">route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">v2&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">parents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v2&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="s1">&amp;#39;NONE&amp;#39;&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="nx">route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">parents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v2&lt;/span>&lt;span class="p">])}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">path&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">parents&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">searched&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fcost&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">queue&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">parents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;NONE&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">h&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">queue&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">queue&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">sortProperties&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">queue&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">node&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">delete&lt;/span> &lt;span class="nx">queue&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">searched&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">node&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">v2&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">try&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;found&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">v1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">v2&lt;/span>&lt;span class="p">);}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">catch&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;No path exists&amp;#39;&lt;/span>&lt;span class="p">);}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">hash_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">generatechild&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">c&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="k">of&lt;/span> &lt;span class="nb">Object&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">entries&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">hash_&lt;/span>&lt;span class="p">)){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">c&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">searched&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">includes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">)){&lt;/span>&lt;span class="k">continue&lt;/span>&lt;span class="p">;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">c&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">gcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">h&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">parents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">node&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">queue&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hasOwnProperty&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">)){&lt;/span>&lt;span class="nx">queue&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">fcost&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">n&lt;/span>&lt;span class="p">]}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;NO path Found&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!--
+&lt;div class="gallery-grid">
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="./media/albums/artworks/ComfyUI_00012_.png" >
+&lt;img src="./media/albums/artworks/ComfyUI_00012__huc445cd5ad83025868edfc18b6cc1de2c_1802432_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00012_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="./media/albums/artworks/ComfyUI_00018_.png" >
+&lt;img src="./media/albums/artworks/ComfyUI_00018__hu26bf9a1a94be4fa17eeaa173d2be47a8_1766519_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00018_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="./media/albums/artworks/ComfyUI_00022_.png" >
+&lt;img src="./media/albums/artworks/ComfyUI_00022__hu402c86523824341693e48a5d479aaa85_1796260_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00022_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="./media/albums/artworks/ComfyUI_00029_.png" >
+&lt;img src="./media/albums/artworks/ComfyUI_00029__hu4b2cbb9f7b260be52d9f263b28eb7bc7_1742824_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00029_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;/div> --></description></item><item><title>The relationship between mental well-being and dysregulated gaming: A specification curve analysis of five gaming disorder scales</title><link>https://tahsintariq.github.io/example/2020-ballou-van-rooij-relationship.html</link><pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2020-ballou-van-rooij-relationship.html</guid><description/></item><item><title>The Changing Face of Desktop Video Game Monetisation: An Exploration of Trends in Loot Boxes, Pay to Win, and Cosmetic Microtransactions in the Most-Played Steam Games of 2010-2019</title><link>https://tahsintariq.github.io/example/2019-zendle-et-al-changing-face.html</link><pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2019-zendle-et-al-changing-face.html</guid><description/></item><item><title>Procedural Terrain Generation</title><link>https://tahsintariq.github.io/blog/terrain-generation.html</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/terrain-generation.html</guid><description>&lt;h3 id="introduction">Introduction&lt;/h3>
+&lt;p>Creating a terrain manually for a game or just for visualization purposes is a really daunting task. Instead, a better way to do so is to programmatically generate it by passing some parameters to a code. Here, I discuss how to make a procedural terrain generator mostly using processing for python. This can also be done in any other language or game engine or 3D design software. I will be making a simple terrain using height maps for stylized purposes. But, first we need to understand how to generate height maps using perlin noise.&lt;/p>
+&lt;p>Perlin noise is a procedurally generated noise texture developed by ken perlin. How perlin noise is generated using code is discussed thoroughly &lt;strong>&lt;a href="https://rtouti.github.io/graphics/perlin-noise-algorithm" target="_blank" rel="noopener">here&lt;/a>&lt;/strong>. I&amp;rsquo;ll be using the built in noise function that generates perlin noise for processing.&lt;/p>
+&lt;h3 id="generating-sample-points">Generating sample points&lt;/h3>
+&lt;p>In order to render the terrain, we need some geometry. We can generate tile the plane with cubes, but that would look more like minecraft. We could choose randomly generated points. But purely random or even pseudo-random choices have a tendency of clustering together. This phenomenon is known as &lt;a href="https://en.wikipedia.org/wiki/Poisson_clumping" target="_blank" rel="noopener">&lt;code>Poisson Clumping&lt;/code>&lt;/a>. Pure or pseudo-random points are not good choices because of this phenomenon, as shown below.&lt;/p>
+&lt;!-- ![Random points](/img/random.png) -->
+&lt;figure id="figure-generated-random-points-tend-to-cluster-together">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./img/random.png" alt="Generated random points tend to cluster together." loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
+Generated random points tend to cluster together.
+&lt;/figcaption>&lt;/figure>
+&lt;p>So, instead we use a different sort of random point generation called &lt;strong>&lt;a href="https://en.wikipedia.org/wiki/Supersampling#Poisson_disk" target="_blank" rel="noopener">&lt;code>Poisson Disc Sampling&lt;/code>&lt;/a>&lt;/strong>. This generates random points at a given interval and thus making them more uniform. This is a much better choice for generating terrains.&lt;/p>
+&lt;p>Now if we triangulate the points,We should get a plane with enough geometry to offset using the generated height map. I go into some details on triangulation &lt;a href="https://tahsintariq.github.io/triangulation" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>. The final result should look something like this (without the animation of course):&lt;/p>
+&lt;div class="videoWrapper">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/Delunay_triangulation"
+data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="creating-a-rough-3d-terrain">Creating a rough 3D terrain&lt;/h3>
+&lt;p>Now we rotate the canvas on the y-axis so it looks more like a plane.&lt;/p>
+&lt;!-- ![Random Plane](/img/random_plane.png) -->
+&lt;figure id="figure-the-entire-plane-rotated-along-the-y-axis-to-give-it-a-3d-look">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./img/random_plane.png" alt="The entire plane rotated along the Y-axis to give it a 3D look" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
+The entire plane rotated along the Y-axis to give it a 3D look
+&lt;/figcaption>&lt;/figure>
+&lt;p>Now, using the generated height map, we offset the z-position of the points by the value corresponding to that x and y position in the height map. This gives us a stylized terrain.&lt;/p>
+&lt;!-- ![Terrain](/img/terrain.png) -->
+&lt;figure id="figure-a-generated-rough-terrain">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./img/terrain.png" alt="A generated rough terrain" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
+A generated rough terrain
+&lt;/figcaption>&lt;/figure>
+&lt;p>We can change the shape of this terrain by changing the noise using offsets. This can result in traversing through the terrain as if we were flying on top of it, or changing the entire topology of the terrain. It will depend on how the noise is being offset.&lt;/p>
+&lt;p>I&amp;rsquo;ve put the processing.py codes for this project &lt;a href="https://github.com/TahsinTariq/Processing/tree/master/Pycessing/Perlin/Terrain_generation" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>.&lt;/p>
+&lt;h3 id="smoother-surfaces">Smoother surfaces&lt;/h3>
+&lt;p>The generated surface is still pretty low resolution and looks pointy. This can be solved in two ways. First, we can either increase the number of points from the poisson disk sampling process. The other method is using the &lt;a href="https://en.wikipedia.org/wiki/Catmull%E2%80%93Clark_subdivision_surface" target="_blank" rel="noopener">&lt;code>Catmull-Clark algorithm&lt;/code>&lt;/a>. This is a technique used in 3D computer graphics to represent curved surfaces by the specification of a coarser polygonal mesh and produced by a recursive algorithmic method.&lt;/p>
+&lt;p>Furthermore, the same process can be used to generate terrain in 3D modelling software. The Catmull-Clark algorithm can be used easily here as most software have built in support. The following demonstrates the improvements made while using the algorithm.&lt;/p>
+&lt;div style="display:flex">
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;img src="./img/terrain_blend_1.png" alt="coarse" data-position="center center" />
+&lt;/div>
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;img src="./img/terrain_blend_2.png" alt="subdivided" data-position="center center" />
+&lt;/div>
+&lt;/div>
+&lt;article class="grid" style="text-align: center;">
+The left image shows a coarse pointy surface, the right image shows a smooth, curved, subdivided surface
+and below is an animated terrain made in Blender 3D
+&lt;/article>
+&lt;video controls loop autoplay>
+&lt;source src="./img/terrain_vid.mp4">
+&lt;/video>
+&lt;h3 id="example-videos">Example videos&lt;/h3>
+&lt;p>Below are two different renders I&amp;rsquo;ve made using the processing.py. One with a half inverted render and the other colored according to the height of the points i.e. a topological height map.&lt;/p>
+&lt;style>
+*.videoWrapper {
+position: relative;
+width:100%;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+}
+video{
+display:grid;
+margin: auto;
+width:90%;
+height:90%;
+}
+*.videoWrapper iframe{
+position: absolute;
+margin:auto;
+top: 0; bottom: 0;
+left: 0; right: 0;
+text-align: center;
+width: 90%;
+height: 90%;
+}
+*.grid{
+display: grid;
+place-items:center;
+/* width: 100%; */
+}
+&lt;/style>
+&lt;style> iframe{ border: none; } &lt;/style>
+&lt;div class="videoWrapper">
+&lt;iframe src="https://www.youtube.com/embed/kLhleR4t7LQ" data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;div class="videoWrapper">
+&lt;iframe src="https://www.youtube.com/embed/-vS37cZq3B8" data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;!-- "https://www.youtube.com/embed/kLhleR4t7LQ" -->
+&lt;!-- "https://www.youtube.com/embed/-vS37cZq3B8" --></description></item><item><title>The Prevalence of Loot Boxes in Mobile and Desktop Games</title><link>https://tahsintariq.github.io/example/2019-zendle-et-al-prevalence.html</link><pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/example/2019-zendle-et-al-prevalence.html</guid><description/></item><item><title>Game of life in Rust</title><link>https://tahsintariq.github.io/project/game-of-life.html</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/project/game-of-life.html</guid><description>&lt;div class="container-lg">
+&lt;div class="col-lg-12">
+&lt;h2 class="mt-5 text-left heading-color">Game of life in Rust and Webassembly&lt;/h2>
+&lt;p class="text-left">This is an implementation of &lt;a
+href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life&lt;/a>. Here I've used
+&lt;a href="https://docs.rs/fixedbitset/0.4.0/fixedbitset/">&lt;code>fixedbitset&lt;/code>&lt;/a> to minimize data
+transfer between javascript and webassembly.
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="container-lg">
+&lt;div class="col-lg-12 ">
+&lt;div class="mt-5">
+&lt;!-- Dropdown HTML -->
+&lt;select name="Render Resolution" id="rez">
+&lt;option value="" selected="selected">Render Resolution&lt;/option>
+&lt;option value="1k">1080p&lt;/option>
+&lt;option value="2k">1620p&lt;/option>
+&lt;option value="4k">2160p&lt;/option>
+&lt;/select>
+&lt;!-- dropdown end -->
+&lt;div class="text-right col" id="fps">&lt;/div>
+&lt;canvas class="col" id="game-of-life">&lt;/canvas>
+&lt;/div>
+&lt;div class="row px-4 g-2">
+&lt;div class="row align-middle col-6 p-3">
+&lt;div class="col-2 text-center">Speed&lt;/div>
+&lt;div class="col">
+&lt;input type="range" min="1" max="10" value="1" class="slider border col" id="range">
+&lt;/div>
+&lt;/div>
+&lt;button class="p-3 col" id="play-pause">&lt;/button>
+&lt;button class="p-3 col" id="reset">Reset&lt;/button>
+&lt;button class="p-3 col" id="dead">Dead Cells&lt;/button>
+&lt;/div>
+&lt;h2 class="mt-5 text-left heading-color">Controls&lt;/h2>
+&lt;p class="text-left">
+Use the slider to control the speed of the game in steps per frame from 1 to 10.
+&lt;/p>
+&lt;p class="text-left">
+Pause, reset the board or kill all the cells in the board with the buttons
+&lt;/p>
+&lt;p class="text-left">
+If you're on a computer,
+&lt;ul>&lt;code>CLICK&lt;/code> to toggle the state of a cell.&lt;/ul>
+&lt;ul>&lt;code>CTRL+CLICK&lt;/code> to insert a &lt;a
+href="https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)">Glider&lt;/a>.&lt;/ul>
+&lt;ul>&lt;code>SHIFT+CLICK&lt;/code> to insert a &lt;a href="https://www.conwaylife.com/wiki/Pulsar">Pulser&lt;/a>.&lt;/ul>
+&lt;ul>&lt;code>CTRL+SHIFT+CLICK&lt;/code> to insert &lt;a href="https://conwaylife.com/wiki/Gosper_glider_gun">Gosper's
+Glider Gun&lt;/a>.
+&lt;/ul>
+&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Hybrid nanoporous materials for the separation of fluid mixtures</title><link>https://tahsintariq.github.io/project/hybrid-nanoporous-materials.html</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/project/hybrid-nanoporous-materials.html</guid><description>&lt;p>Update will be posted here.&lt;/p></description></item><item><title/><link>https://tahsintariq.github.io/admin.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/admin.yml</guid><description/></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/publication.html</link><atom:link href="https://tahsintariq.github.io/publication/index.xml" rel="self" type="application/rss+xml"/><description>Publications</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Publications</title><link>https://tahsintariq.github.io/publication.html</link></image><item><title>GEMM: A Graph Embedded Model for Memorability Prediction</title><link>https://tahsintariq.github.io/publication/2023-gemm_memorability.html</link><pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2023-gemm_memorability.html</guid><description>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/62146852/232325513-e9de077e-49d3-4ce0-b090-6360054c55ca.png" alt="gemm_architecture" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p style="text-align:center"> Figure. The GEMM Architecture &lt;/p></description></item></channel></rss>
