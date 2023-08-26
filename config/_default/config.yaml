@@ -86,6 +86,7 @@ cascade:
   - _target:
       path: /blog/**
     share: false
+    pager: true
   - _target:
       path: /publication/**
     share: false
