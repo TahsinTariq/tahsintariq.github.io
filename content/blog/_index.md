@@ -4,6 +4,6 @@
 #   image: ""
 title: Blog Posts
 view: 2
-aliases: [/post/]
-headless: true
+# aliases: [/post/]
+# headless: true
 ---

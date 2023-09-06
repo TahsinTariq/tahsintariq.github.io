@@ -18,12 +18,13 @@ main:
   # - name: Projects
   #   url: '/project'
   #   weight: 50
-  - name: Blog
-    url: '/blog/'
+  - name: Blogs
+    url: '/blog'
     weight: 60
   - name: CV
     url: '/files/cv/cv.pdf'
     weight: 70
+
   
 # Sub-home menu
 #  - name: About
