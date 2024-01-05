@@ -9,11 +9,12 @@ featured: true
 tags:
 - Deep learning
 - Computer vision
+- Memorability
 publication: "2023 International Joint Conference on Neural Networks (IJCNN)"
 links:
   - icon_pack: fas
     icon: scroll
-    name: Paper
+    name: DOI
     url: 'https://doi.org/10.1109/IJCNN54540.2023.10191500'
   - icon_pack: ai
     icon: open-data
@@ -23,6 +24,10 @@ links:
     icon: video
     name: Video
     url: 'https://youtu.be/HjJh5guZLDQ'
+  - icon_pack: fas
+    icon: file
+    name: Paper
+    url: 'IJCNN_Memorability.pdf'
 ---
 
 ![gemm_architecture](https://user-images.githubusercontent.com/62146852/232325513-e9de077e-49d3-4ce0-b090-6360054c55ca.png)
