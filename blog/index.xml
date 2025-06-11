@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog Posts | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/blog.html</link><atom:link href="https://tahsintariq.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><description>Blog Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Blog Posts</title><link>https://tahsintariq.github.io/blog.html</link></image><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle-game.html</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle-game.html</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog Posts | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/blog/</link><atom:link href="https://tahsintariq.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><description>Blog Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Blog Posts</title><link>https://tahsintariq.github.io/blog/</link></image><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle-game/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle-game/</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
 &lt;h3 id="features">Features&lt;/h3>
 &lt;ul>
 &lt;li>Uses the A* algorithm to find the shortest way to solve the puzzle&lt;/li>
@@ -149,26 +149,26 @@ A Markdown callout is useful for displaying notices, hints, or definitions to yo
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!--
 &lt;div class="gallery-grid">
 &lt;div class="gallery-item gallery-item--medium">
-&lt;a data-fancybox="gallery-artworks" href="../media/albums/artworks/ComfyUI_00012_.png" >
-&lt;img src="../media/albums/artworks/ComfyUI_00012__huc445cd5ad83025868edfc18b6cc1de2c_1802432_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00012_.png" width="750" height="421">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00012_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00012__huc445cd5ad83025868edfc18b6cc1de2c_1802432_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00012_.png" width="750" height="421">
 &lt;/a>
 &lt;/div>
 &lt;div class="gallery-item gallery-item--medium">
-&lt;a data-fancybox="gallery-artworks" href="../media/albums/artworks/ComfyUI_00018_.png" >
-&lt;img src="../media/albums/artworks/ComfyUI_00018__hu26bf9a1a94be4fa17eeaa173d2be47a8_1766519_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00018_.png" width="750" height="421">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00018_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00018__hu26bf9a1a94be4fa17eeaa173d2be47a8_1766519_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00018_.png" width="750" height="421">
 &lt;/a>
 &lt;/div>
 &lt;div class="gallery-item gallery-item--medium">
-&lt;a data-fancybox="gallery-artworks" href="../media/albums/artworks/ComfyUI_00022_.png" >
-&lt;img src="../media/albums/artworks/ComfyUI_00022__hu402c86523824341693e48a5d479aaa85_1796260_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00022_.png" width="750" height="421">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00022_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00022__hu402c86523824341693e48a5d479aaa85_1796260_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00022_.png" width="750" height="421">
 &lt;/a>
 &lt;/div>
 &lt;div class="gallery-item gallery-item--medium">
-&lt;a data-fancybox="gallery-artworks" href="../media/albums/artworks/ComfyUI_00029_.png" >
-&lt;img src="../media/albums/artworks/ComfyUI_00029__hu4b2cbb9f7b260be52d9f263b28eb7bc7_1742824_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00029_.png" width="750" height="421">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00029_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00029__hu4b2cbb9f7b260be52d9f263b28eb7bc7_1742824_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00029_.png" width="750" height="421">
 &lt;/a>
 &lt;/div>
-&lt;/div> --></description></item><item><title>Procedural Terrain Generation</title><link>https://tahsintariq.github.io/blog/terrain-generation.html</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/terrain-generation.html</guid><description>&lt;h3 id="introduction">Introduction&lt;/h3>
+&lt;/div> --></description></item><item><title>Procedural Terrain Generation</title><link>https://tahsintariq.github.io/blog/terrain-generation/</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/terrain-generation/</guid><description>&lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>Creating a terrain manually for a game or just for visualization purposes is a really daunting task. Instead, a better way to do so is to programmatically generate it by passing some parameters to a code. Here, I discuss how to make a procedural terrain generator mostly using processing for python. This can also be done in any other language or game engine or 3D design software. I will be making a simple terrain using height maps for stylized purposes. But, first we need to understand how to generate height maps using perlin noise.&lt;/p>
 &lt;p>Perlin noise is a procedurally generated noise texture developed by ken perlin. How perlin noise is generated using code is discussed thoroughly &lt;strong>&lt;a href="https://rtouti.github.io/graphics/perlin-noise-algorithm" target="_blank" rel="noopener">here&lt;/a>&lt;/strong>. I&amp;rsquo;ll be using the built in noise function that generates perlin noise for processing.&lt;/p>
 &lt;h3 id="generating-sample-points">Generating sample points&lt;/h3>
@@ -176,7 +176,7 @@ A Markdown callout is useful for displaying notices, hints, or definitions to yo
 &lt;!-- ![Random points](/img/random.png) -->
 &lt;figure id="figure-generated-random-points-tend-to-cluster-together">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="../img/random.png" alt="Generated random points tend to cluster together." loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/random.png" alt="Generated random points tend to cluster together." loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
 Generated random points tend to cluster together.
 &lt;/figcaption>&lt;/figure>
@@ -193,7 +193,7 @@ data-position="center center">
 &lt;!-- ![Random Plane](/img/random_plane.png) -->
 &lt;figure id="figure-the-entire-plane-rotated-along-the-y-axis-to-give-it-a-3d-look">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="../img/random_plane.png" alt="The entire plane rotated along the Y-axis to give it a 3D look" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/random_plane.png" alt="The entire plane rotated along the Y-axis to give it a 3D look" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
 The entire plane rotated along the Y-axis to give it a 3D look
 &lt;/figcaption>&lt;/figure>
@@ -201,7 +201,7 @@ The entire plane rotated along the Y-axis to give it a 3D look
 &lt;!-- ![Terrain](/img/terrain.png) -->
 &lt;figure id="figure-a-generated-rough-terrain">
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="../img/terrain.png" alt="A generated rough terrain" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/terrain.png" alt="A generated rough terrain" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
 A generated rough terrain
 &lt;/figcaption>&lt;/figure>
@@ -212,10 +212,10 @@ A generated rough terrain
 &lt;p>Furthermore, the same process can be used to generate terrain in 3D modelling software. The Catmull-Clark algorithm can be used easily here as most software have built in support. The following demonstrates the improvements made while using the algorithm.&lt;/p>
 &lt;div style="display:flex">
 &lt;div style="flex:1;padding:0 1% 0 0">
-&lt;img src="../img/terrain_blend_1.png" alt="coarse" data-position="center center" />
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_1.png" alt="coarse" data-position="center center" />
 &lt;/div>
 &lt;div style="flex:1;padding:0 1% 0 0">
-&lt;img src="../img/terrain_blend_2.png" alt="subdivided" data-position="center center" />
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="subdivided" data-position="center center" />
 &lt;/div>
 &lt;/div>
 &lt;article class="grid" style="text-align: center;">
@@ -223,7 +223,7 @@ The left image shows a coarse pointy surface, the right image shows a smooth, cu
 and below is an animated terrain made in Blender 3D
 &lt;/article>
 &lt;video controls loop autoplay>
-&lt;source src="../img/terrain_vid.mp4">
+&lt;source src="https://tahsintariq.github.io/img/terrain_vid.mp4">
 &lt;/video>
 &lt;h3 id="example-videos">Example videos&lt;/h3>
 &lt;p>Below are two different renders I&amp;rsquo;ve made using the processing.py. One with a half inverted render and the other colored according to the height of the points i.e. a topological height map.&lt;/p>
