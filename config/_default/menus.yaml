@@ -22,7 +22,7 @@ main:
     url: '/blog'
     weight: 60
   - name: CV
-    url: '/files/cv/cv.pdf'
+    url: '/files/cv/tahsin_resume.pdf'
     weight: 70
 
   

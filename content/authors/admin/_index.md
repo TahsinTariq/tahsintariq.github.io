@@ -15,15 +15,15 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Masters Student
+role: Machine Learning Engineer
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Department of Robotics and Mechatronics Engineering
-    url: https://rme.du.ac.bd/
+  - name: Advanced Chemical Industries (ACI)
+    url: https://www.aci-bd.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Master's Student studying Robotics and Mechatronics Engineering with a focus on Computer Vision.
+bio: Hello, I work on human-robot interactions, computer vision, and deep learning.
 
 # Interests to show in About widget
 interests:
@@ -37,6 +37,9 @@ education:
     - course: Bsc in Robotics and Mechatronics Engineering
       institution: University of Dhaka, Bangladesh
       year: 2022
+    - course: Msc in Robotics and Mechatronics Engineering
+      institution: University of Dhaka, Bangladesh
+      year: 2025
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -77,11 +80,13 @@ highlight_name: true
 <!-- **About me** -->
 
 # Hello There (･ω･)ﾉ
-I'm currently studying Robotics and Mechatronics Engineering at The University of Dhaka. My research is focused on computer vision and deep learning. I am also interested in Graph Neural Networks and Geometric Deep Learning. 
+I'm currently employed as a Machine Learning Engineer at Advanced Chemical Industries (ACI). I completed my Honors and Masters in Robotics and Mechatronics Engineering from The University of Dhaka. My research is focused on computer vision, deep learning, human-robot interaction, Graph Neural Networks and Geometric Deep Learning. I am also interested in geometric topology and symmetry in both nature and art. 
 
-In my free time, I make generative art using [processing](https://processing.org/), JavaScript and Python. I also love 3D modelling and 3D printing. I ocassionaly write about things I'm interested in and post them on this site.
+In my free time, I make generative art using [processing](https://processing.org/), JavaScript and Python. I also love 3D modelling and 3D printing. I occasionally write about things I'm interested in and post them on this site.
 
 I'm also the Pop!_rep for Bangladesh. So, if you're from BD and are in need of some [system76 stickers](https://system76.com/merch/stickers), feel free to ask :)
+
+
 <!-- **Open source and open data**
 
 * [MAICoS](https://maicos-devel.gitlab.io/maicos/index.html), a Python toolkit for analyzing confined molecular simulations

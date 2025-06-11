@@ -5,3 +5,5 @@ To build localy:
 ```bash
 hugo server
 ```
+
+Make sure to install `hugo extended v0.101.0`
