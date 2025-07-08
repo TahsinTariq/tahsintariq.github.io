@@ -18,7 +18,7 @@ This is a JavaScript implementation of the classic 8-puzzle game. I've also buil
 ### Features
 * Uses the A* algorithm to find the shortest way to solve the puzzle
 * You can choose any image to show in the tiles. It will replace the numbers though.
-* The blank tile can also be controlled using hand gestures. It was trained using supervised learning on a set of over 5000 photos.
+* The blank tile can also be controlled using hand gestures. It was trained using supervised learning on a custom dataset of over 5000 photos (all the photos are of me showing my hand to the camera :smile:).
 
 
 ### Controls
@@ -124,8 +124,8 @@ A Markdown callout is useful for displaying notices, hints, or definitions to yo
 </div> -->
 
 <!-- <script src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js"></script> -->
-
-```js
+{{< gist TahsinTariq 5c4ba6b74dd1279f6d4bcfea6a3cbefd  >}}
+<!-- ```js
 function AStar(v1, v2){
 	function route(v1, v2){
 	    if (parents[v2] != 'NONE'){route(v1, parents[v2])}
@@ -167,6 +167,6 @@ function AStar(v1, v2){
     }
     print('NO path Found')
 }
-```
+``` -->
 
 <!-- {{< gallery album="artworks" >}} -->

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Loop through all .jpg and .png files in the current directory
+for file in *.jpg *.png; do
+    # Skip if no matching files are found
+    [ -e "$file" ] || continue
+
+    # Get the filename without the extension
+    base_name="${file%.*}"
+    # Get the extension
+    extension="${file##*.}"
+
+    # Define the new name for compressed files
+    if [[ "$extension" == "png" ]]; then
+        # Convert PNG to JPG
+        new_name="${base_name}_compressed.jpg"
+        ffmpeg -i "$file" -q:v 5 "$new_name"
+    else
+        # Handle JPG compression
+        new_name="${base_name}_compressed.jpg"
+        ffmpeg -i "$file" -q:v 5 "$new_name"
+    fi
+
+    echo "Processed: $file -> $new_name"
+done
+

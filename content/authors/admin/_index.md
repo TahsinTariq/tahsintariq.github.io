@@ -82,9 +82,9 @@ highlight_name: true
 # Hello There (･ω･)ﾉ
 I'm currently employed as a Machine Learning Engineer at Advanced Chemical Industries (ACI). I completed my Honors and Masters in Robotics and Mechatronics Engineering from The University of Dhaka. My research is focused on computer vision, deep learning, human-robot interaction, Graph Neural Networks and Geometric Deep Learning. I am also interested in geometric topology and symmetry in both nature and art. 
 
-In my free time, I make generative art using [processing](https://processing.org/), JavaScript and Python. I also love 3D modelling and 3D printing. I occasionally write about things I'm interested in and post them on this site.
+In my free time, I make generative art using [`processing`](https://processing.org/), JavaScript and Python. I also love 3D modelling and 3D printing. I occasionally write about things I'm interested in and post them on this site.
 
-I'm also the Pop!_rep for Bangladesh. So, if you're from BD and are in need of some [system76 stickers](https://system76.com/merch/stickers), feel free to ask :)
+I'm also the Pop!_rep for Bangladesh. So, if you're from BD and are in need of some [`system76 stickers`](https://system76.com/merch/stickers), feel free to ask :)
 
 
 <!-- **Open source and open data**

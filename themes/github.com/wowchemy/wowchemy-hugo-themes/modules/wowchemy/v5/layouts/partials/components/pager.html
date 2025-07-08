@@ -1,18 +1,30 @@
 {{ $str := "" }}
-<div class="post-nav">
-  {{if .NextInSection}}
-  {{/* For the Book layout, prev/next labels are reversed. */}}
-  {{ if in (slice "docs" "book") .Type }}{{ $str = "previous" }}{{else}}{{ $str = "next" }}{{end}}
-  <div class="post-nav-item">
+<div class="post-nav" style="display: flex; justify-content: space-between; align-items: center;">
+  {{ if .PrevInSection }}
+  {{ if in (slice "docs" "book") .Type }}
+  {{ $str = "next" }}
+  {{ else }}
+  {{ $str = "previous" }}
+  {{ end }}
+  <div class="post-nav-item prev" style="text-align: left;">
     <div class="meta-nav">{{ i18n $str }}</div>
-    <a href="{{.NextInSection.RelPermalink}}" rel="next">{{.NextInSection.Title}}</a>
+    <a href="{{ .PrevInSection.RelPermalink }}" rel="prev">{{ .PrevInSection.Title }}</a>
   </div>
-  {{end}}
-  {{if .PrevInSection}}
-  {{ if in (slice "docs" "book") .Type }}{{ $str = "next" }}{{else}}{{ $str = "previous" }}{{end}}
-  <div class="post-nav-item">
+  {{ else }}
+  <div></div> <!-- Empty placeholder to keep spacing -->
+  {{ end }}
+
+  {{ if .NextInSection }}
+  {{ if in (slice "docs" "book") .Type }}
+  {{ $str = "previous" }}
+  {{ else }}
+  {{ $str = "next" }}
+  {{ end }}
+  <div class="post-nav-item next" style="text-align: right;">
     <div class="meta-nav">{{ i18n $str }}</div>
-    <a href="{{.PrevInSection.RelPermalink}}" rel="prev">{{.PrevInSection.Title}}</a>
+    <a href="{{ .NextInSection.RelPermalink }}" rel="next">{{ .NextInSection.Title }}</a>
   </div>
-  {{end}}
+  {{ else }}
+  <div></div> <!-- Empty placeholder -->
+  {{ end }}
 </div>
