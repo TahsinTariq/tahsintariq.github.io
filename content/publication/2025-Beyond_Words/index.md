@@ -30,5 +30,5 @@ links:
     url: 'Tahsin_Beyond_Words.pdf'
 ---
 
-![Generated Gestures for the Pepper Robot](pepper_aamas.png)
+![Generated Gestures for the Pepper Robot](./pepper_aamas.jpg)
 <p style="text-align:center"> Figure. The Pepper robot performing generated gestures.</p>
