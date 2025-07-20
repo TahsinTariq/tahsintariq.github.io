@@ -34,7 +34,7 @@ allowfullscreen>
 &lt;/div>
 &lt;/div>
 &lt;h3 id="what-is-it">What is it?&lt;/h3>
-&lt;p>A random crawlers as I call it is a set of very simple rules that can simulate natural looking movement, namely that of spiders. But even though the underlying mechanism is simple, the results are anything but. The name &lt;code>random crawlers&lt;/code> is a reference to one of my favorite processes in mathematics, the &lt;a href="https://en.wikipedia.org/wiki/Random_walk" target="_blank" rel="noopener">&lt;code>Random Walk&lt;/code>&lt;/a> algorithm. This simple process links several fields of modern technology including computer graphics, game dev, physics, fluid simulation and even social sciences. But I find it quite fascinating how linking one stochastic process to another completely seemingly unrelated thing can result in such a convincing work of art.&lt;/p>
+&lt;p>A random crawlers as I call it is a set of very simple rules that can simulate natural looking movement. But even though the underlying mechanism is simple, the results are anything but. The name &lt;code>random crawlers&lt;/code> is a reference to one of my favorite processes in mathematics, the &lt;a href="https://en.wikipedia.org/wiki/Random_walk" target="_blank" rel="noopener">&lt;code>Random Walk&lt;/code>&lt;/a> algorithm. This simple process links several fields of modern technology including computer graphics, game dev, physics, fluid simulation and even social sciences. But I find it quite fascinating how linking one stochastic process to another completely seemingly unrelated thing can result in such a convincing work of art.&lt;/p>
 &lt;p>TODO:&lt;/p>
 &lt;h3 id="how-does-it-work">How does it work?&lt;/h3>
 &lt;h4 id="technical-pendulums-and-poisson-distributions">Technical: Pendulums and Poisson Distributions&lt;/h4>
@@ -255,27 +255,52 @@ A generated rough terrain
 &lt;h3 id="smoother-surfaces">Smoother surfaces&lt;/h3>
 &lt;p>The generated surface is still pretty low resolution and looks pointy. This can be solved in two ways. First, we can either increase the number of points from the poisson disk sampling process. The other method is using the &lt;a href="https://en.wikipedia.org/wiki/Catmull%E2%80%93Clark_subdivision_surface" target="_blank" rel="noopener">&lt;code>Catmull-Clark algorithm&lt;/code>&lt;/a>. This is a technique used in 3D computer graphics to represent curved surfaces by the specification of a coarser polygonal mesh and produced by a recursive algorithmic method.&lt;/p>
 &lt;p>Furthermore, the same process can be used to generate terrain in 3D modelling software. The Catmull-Clark algorithm can be used easily here as most software have built in support. The following demonstrates the improvements made while using the algorithm.&lt;/p>
-&lt;!-- &lt;div style="display:flex">
-&lt;div style="flex:1;padding:0 1% 0 0">
-&lt;img src="https://tahsintariq.github.io/img/terrain_blend_1.png" alt="coarse" data-position="center center" />
+&lt;div class="image-grid-container">
+&lt;div class="image-grid-row">
+&lt;div class="image-grid-item">
+&lt;figure.lightbox { margin: 0px; /* Remove default figure margins */ }>
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_1.png" alt="/img/terrain_blend_1.png" loading="lazy" data-zoomable class="img-fluid rounded" />
+&lt;/figure>
 &lt;/div>
-&lt;div style="flex:1;padding:0 1% 0 0">
-&lt;img src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="subdivided" data-position="center center" />
-&lt;/div>
-&lt;/div> -->
-&lt;div style="gallery-section">
-&lt;div class="gallery-grid">
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/terrain_blend_1.png" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
+&lt;div class="image-grid-item">
+&lt;figure.lightbox { margin: 0px; /* Remove default figure margins */ }>
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="/img/terrain_blend_2.png" loading="lazy" data-zoomable class="img-fluid rounded" />
+&lt;/figure>
 &lt;/div>
 &lt;/div>
-&lt;p>The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.&lt;/p>
+&lt;p class="image-grid-caption">The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.&lt;/p>
+&lt;/div>
+&lt;style>
+.image-grid-container {
+display: flex;
+flex-direction: column;
+row-gap: 5px;
+margin-bottom: 1em;
+}
+.image-grid-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+.image-grid-item {
+flex: 1;
+min-width: 200px;
+text-align: center;
+}
+.image-grid-item img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.image-grid-caption {
+text-align: center;
+font-size: 0.9em;
+color: #666;
+margin-top: 0.5em;
+}
+&lt;/style>
 &lt;video controls loop autoplay>
 &lt;source src="https://tahsintariq.github.io/img/terrain_vid.mp4">
 &lt;/video>
