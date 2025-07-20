@@ -47,7 +47,7 @@ Controls:
 
 ### What is it?
 
-A random crawlers as I call it is a set of very simple rules that can simulate natural looking movement, namely that of spiders. But even though the underlying mechanism is simple, the results are anything but. The name `random crawlers` is a reference to one of my favorite processes in mathematics, the [`Random Walk`](https://en.wikipedia.org/wiki/Random_walk) algorithm. This simple process links several fields of modern technology including  computer graphics, game dev, physics, fluid simulation and even social sciences. But I find it quite fascinating how linking one stochastic process to another completely seemingly unrelated thing can result in such a convincing work of art.
+A random crawlers as I call it is a set of very simple rules that can simulate natural looking movement. But even though the underlying mechanism is simple, the results are anything but. The name `random crawlers` is a reference to one of my favorite processes in mathematics, the [`Random Walk`](https://en.wikipedia.org/wiki/Random_walk) algorithm. This simple process links several fields of modern technology including  computer graphics, game dev, physics, fluid simulation and even social sciences. But I find it quite fascinating how linking one stochastic process to another completely seemingly unrelated thing can result in such a convincing work of art.
 
 TODO:
 

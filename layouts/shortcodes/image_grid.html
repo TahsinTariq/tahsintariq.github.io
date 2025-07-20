@@ -1,0 +1,77 @@
+<div class="image-grid-container">
+  {{ $caption := "" }}
+  {{ $currentRowImages := slice }}
+  {{ $allRows := slice }}
+
+  {{ range $index, $param := .Params }}
+  {{ if (hasPrefix $param "caption=") }}
+  {{ $caption = (replace $param "caption=" "") }}
+  {{ else if (eq $param "---") }}
+  {{ if gt (len $currentRowImages) 0 }}
+  {{ $allRows = $allRows | append (slice $currentRowImages) }}
+  {{ $currentRowImages = slice }}
+  {{ end }}
+  {{ else }}
+  {{ $currentRowImages = $currentRowImages | append $param }}
+  {{ end }}
+  {{ end }}
+
+  {{ if gt (len $currentRowImages) 0 }}
+  {{ $allRows = $allRows | append (slice $currentRowImages) }}
+  {{ end }}
+
+  {{ range $row := $allRows }}
+  <div class="image-grid-row">
+    {{ range $image := $row }}
+    <div class="image-grid-item">
+      <figure.lightbox { margin: 0px; /* Remove default figure margins */ }>
+        <img src="{{ $image | relURL }}" alt="{{ $image }}" loading="lazy" data-zoomable class="img-fluid rounded" />
+        </figure>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $caption }}
+  <p class="image-grid-caption">{{ . | markdownify }}</p>
+  {{ end }}
+</div>
+
+<style>
+  .image-grid-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    /* Explicitly set gap between rows */
+    margin-bottom: 1em;
+  }
+
+  .image-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* Gap between images in a row */
+  }
+
+  .image-grid-item {
+    flex: 1;
+    min-width: 200px;
+    /* Adjust minimum width of each image container */
+    text-align: center;
+  }
+
+  .image-grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image-grid-caption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+  }
+</style>

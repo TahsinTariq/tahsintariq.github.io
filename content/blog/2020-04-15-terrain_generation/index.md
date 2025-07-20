@@ -55,20 +55,12 @@ The generated surface is still pretty low resolution and looks pointy. This can 
 Furthermore, the same process can be used to generate terrain in 3D modelling  software. The Catmull-Clark algorithm can be used easily here as most software have built in support. The following demonstrates the improvements made while using the algorithm.
 
 
-<!-- <div style="display:flex">
-    <div style="flex:1;padding:0 1% 0 0">
-       <img  src="/img/terrain_blend_1.png" alt="coarse" data-position="center center" />
-    </div>
-    <div style="flex:1;padding:0 1% 0 0">
-       <img  src="/img/terrain_blend_2.png" alt="subdivided" data-position="center center" />
-    </div>
-</div> -->
+{{< image_grid 
+"/img/terrain_blend_1.png" 
+"/img/terrain_blend_2.png" 
+"---"
+"caption=The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.">}}
 
-
-{{< figure_row "/img/terrain_blend_1.png" "/img/terrain_blend_1.png" "/img/terrain_blend_1.png" 
-"caption=This is a caption for both images." >}}
-
-The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.
 
 <video controls loop autoplay>
   <source src="/img/terrain_vid.mp4">
