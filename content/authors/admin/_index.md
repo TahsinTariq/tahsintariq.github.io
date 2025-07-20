@@ -68,7 +68,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: files/cv/cv.pdf
+    link: files/cv/tahsin_resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''

@@ -33,6 +33,3 @@ links:
     name: Paper
     url: 'IJCNN_Memorability.pdf'
 ---
-
-![Generated Gestures for the Pepper Robot](https://user-images.githubusercontent.com/62146852/232325513-e9de077e-49d3-4ce0-b090-6360054c55ca.png)
-<p style="text-align:center"> Figure. The Pepper robot performing generated gestures.</p>
