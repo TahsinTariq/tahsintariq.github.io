@@ -65,12 +65,8 @@ Furthermore, the same process can be used to generate terrain in 3D modelling  s
 </div> -->
 
 
-<div style="gallery-section">
-    <div class="gallery-grid">
-  {{< figure src="/img/terrain_blend_1.png">}}
-  {{< figure src="/img/terrain_blend_2.png" >}}
-	</div>
-</div>
+{{< figure_row "/img/terrain_blend_1.png" "/img/terrain_blend_1.png" "/img/terrain_blend_1.png" 
+"caption=This is a caption for both images." >}}
 
 The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.
 

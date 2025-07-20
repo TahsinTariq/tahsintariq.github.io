@@ -1,0 +1,42 @@
+<div class="figure-row">
+  {{- range .Params -}}
+    {{- if (hasPrefix . "caption=") -}}
+      {{- $.Scratch.Set "caption" (replace . "caption=" "") -}}
+    {{- else -}}
+      <div class="figure-item">
+        <img src="{{ . | relURL }}" alt="{{ . }}">
+      </div>
+    {{- end -}}
+  {{- end -}}
+  {{- with $.Scratch.Get "caption" -}}
+    <p class="figure-caption">{{ . | markdownify }}</p>
+  {{- end -}}
+</div>
+
+<style>
+  .figure-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between images as needed */
+    margin-bottom: 1em;
+  }
+  .figure-item {
+    flex: 1;
+    min-width: 200px; /* Adjust minimum width of each image container */
+    text-align: center;
+  }
+  .figure-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .figure-caption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+    width: 100%; /* Ensure caption spans full width */
+  }
+</style>
