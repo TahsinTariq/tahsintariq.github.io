@@ -15,12 +15,15 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Machine Learning Engineer
+role: Lecturer
+# Machine Learning Engineer
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Advanced Chemical Industries (ACI)
-    url: https://www.aci-bd.com/
+  - name: East West University
+    url: https://www.ewubd.edu/
+  # - name: Advanced Chemical Industries (ACI)
+  #   url: https://www.aci-bd.com/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Hello, I work on human-robot interactions, computer vision, and deep learning.
@@ -80,7 +83,7 @@ highlight_name: true
 <!-- **About me** -->
 
 # Hello There (･ω･)ﾉ
-I'm currently employed as a Machine Learning Engineer at Advanced Chemical Industries (ACI). I completed my Honors and Masters in Robotics and Mechatronics Engineering from The University of Dhaka. My research is focused on computer vision, deep learning, human-robot interaction, Graph Neural Networks and Geometric Deep Learning. I am also interested in geometric topology and symmetry in both nature and art. 
+I'm currently a lecturer at East West University, Dhaka. I completed my Honors and Masters in Robotics and Mechatronics Engineering from The University of Dhaka. My research is focused on computer vision, deep learning, human-robot interaction, Graph Neural Networks and Geometric Deep Learning. I am also interested in geometric topology and symmetry in both nature and art. 
 
 In my free time, I make generative art using [`processing`](https://processing.org/), JavaScript and Python. I also love 3D modelling and 3D printing. I occasionally write about things I'm interested in and post them on this site.
 
