@@ -1,0 +1,4 @@
+{{/* Production builds only, so `hugo server` visits aren't counted. */}}
+{{ if hugo.IsProduction }}
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "67da06e6ece243eea230b62ddac99d16"}'></script><!-- End Cloudflare Web Analytics -->
+{{ end }}

@@ -12,7 +12,7 @@
   const defaultImg = $('stipple-default');
   const fpsEl = $('stipple-fps');
 
-  const DEFAULT_STATUS = 'Photos, videos and camera stay on your device.';
+  const DEFAULT_STATUS = 'Photos and videos are processed on device and not uploaded elsewhere.';
 
   const gl = canvas.getContext('webgl2');
   if (!gl) {
@@ -22,8 +22,8 @@
 
   // Shadertoy's #defines, now live controls. `uniform` is the GLSL name it drives.
   const SETTINGS = [
-    { uniform: 'uGridSize',     label: 'Grid size',           min: 10,    max: 150,  step: 1,      value: 50 },
-    { uniform: 'uMaxPoints',    label: 'Max points per cell', min: 1,     max: 8,    step: 1,      value: 4, int: true },
+    { uniform: 'uGridSize',     label: 'Grid size',           min: 10,    max: 250,  step: 1,      value: 50 },
+    { uniform: 'uMaxPoints',    label: 'Max points per cell', min: 1,     max: 50,   step: 1,      value: 4, int: true },
     { uniform: 'uLumaWeight',   label: 'Brightness weight',   min: 0,     max: 2,    step: 0.05,   value: 0.45 },
     { uniform: 'uDetailWeight', label: 'Detail weight',       min: 0,     max: 4,    step: 0.05,   value: 1.6 },
     { uniform: 'uPointSize',    label: 'Point size',          min: 0.001, max: 0.01, step: 0.0005, value: 0.004 },
@@ -331,7 +331,7 @@ void main() { mainImage(outColor, gl_FragCoord.xy); }`;
       camBtn.disabled = false;
     }
     setSource(video, video.videoWidth, video.videoHeight, 'camera');
-    status.textContent = 'Camera is on. Video never leaves your device.';
+    status.textContent = 'Camera is on. Video is processed on device and not uploaded elsewhere.';
   }
 
   // --- Controls ---

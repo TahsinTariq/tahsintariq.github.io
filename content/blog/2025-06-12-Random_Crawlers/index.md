@@ -77,7 +77,5 @@ The random points around the crawler anchor is generated using poisson disk samp
 This was largely inspired from the work `Process Compendium` by Casey Reas. There he describes how a simple set of elements and interaction processes can lead to complex forms and behaviours. For Random Crawlers, this can be described simply as follows:
 
 > **Element 1.** A point that moves along the sum of $N$ circular motions.
->
 > **Element 2.** Stationary points distributed uniformly along the plane.
->
 > **Process.** Draw a line from each Element 1 to every Element 2 within distance $d$.

@@ -1,5 +1,5 @@
 ---
-title: I drew this with mathematical equations
+title: Realtime Voronoi Stippling
 author: ["admin"]
 date: '2025-02-10'
 slug: voronoi stippling
@@ -9,8 +9,8 @@ tags: []
 image:
   caption: ''
   focal_point: ''
-summary: 'Implementation of Realtime Voronoi Stippling'
-subtitle: 'Implementing Realtime Voronoi Stippling Using WebGL'
+summary: 'Implementation of Realtime Voronoi Stippling on image and video'
+subtitle: 'Implementing Voronoi Stippling Using WebGL'
 smartDashes: true
 ---
 
