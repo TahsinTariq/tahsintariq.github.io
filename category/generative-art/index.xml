@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Generative Art | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/category/generative-art/</link><atom:link href="https://tahsintariq.github.io/category/generative-art/index.xml" rel="self" type="application/rss+xml"/><description>Generative Art</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>Generative Art</title><link>https://tahsintariq.github.io/category/generative-art/</link></image><item><title>Random Crawlers</title><link>https://tahsintariq.github.io/blog/random-crawlers/</link><pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/random-crawlers/</guid><description>&lt;h3 id="introducing-random-crawlers">Introducing Random Crawlers&lt;/h3>
+&lt;div style="position: relative; width: 100%; padding-bottom: 60%; height: 0;border: 2px solid #ED225D;">
+&lt;iframe src="https://editor.p5js.org/TahsinTariq/full/YDUOeuZwo"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+allowfullscreen>
+&lt;/iframe>
+&lt;/div>
+&lt;!-- &lt;div class="alert alert-controls">
+&lt;div>
+&lt;p>Controls:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>i&lt;/strong> - Toggle trajectory&lt;/li>
+&lt;li>&lt;strong>p&lt;/strong> - Toggle pendulums&lt;/li>
+&lt;li>&lt;strong>l&lt;/strong> - Toogle pendulum joints&lt;/li>
+&lt;li>&lt;strong>u&lt;/strong> - Toggle crawlers&lt;/li>
+&lt;li>&lt;strong>o&lt;/strong> - Toggle attachment points&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+-->
+&lt;div class="alert alert-controls">
+&lt;div>
+&lt;p>Controls:&lt;/p>
+&lt;div class="two-column-list">
+&lt;ul>
+&lt;li>&lt;strong>i&lt;/strong> - Toggle trajectory&lt;/li>
+&lt;li>&lt;strong>p&lt;/strong> - Toggle pendulums&lt;/li>
+&lt;li>&lt;strong>l&lt;/strong> - Toggle pendulum joints&lt;/li>
+&lt;li>&lt;strong>u&lt;/strong> - Toggle crawlers&lt;/li>
+&lt;li>&lt;strong>o&lt;/strong> - Toggle attachment points&lt;/li>
+&lt;!-- &lt;ul>If the buttons are not working, click on the canvas and try again.&lt;/ul> -->
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="what-is-it">What is it?&lt;/h3>
+&lt;p>A random crawlers as I call it is a set of very simple rules that can simulate natural looking movement. But even though the underlying mechanism is simple, the results are anything but. The name &lt;code>random crawlers&lt;/code> is a reference to one of my favorite processes in mathematics, the &lt;a href="https://en.wikipedia.org/wiki/Random_walk" target="_blank" rel="noopener">&lt;code>Random Walk&lt;/code>&lt;/a> algorithm. This simple process links several fields of modern technology including computer graphics, game dev, physics, fluid simulation and even social sciences. But I find it quite fascinating how linking one stochastic process to another completely seemingly unrelated thing can result in beautiful visualizations.&lt;/p>
+&lt;h3 id="how-does-it-work">How does it work?&lt;/h3>
+&lt;p>This is a piece I&amp;rsquo;ve worked on for quite a while. it&amp;rsquo;s essentially a set of chained rotating arms connected end to end. Each have their own length and rotational speed. At the end of the chain is anchored a crawler agent that simply connects to nearby points and therefore, the anchor and the connecting lines make it seem like crawlers. The end of the chains form what is known as an &lt;a href="https://en.wikipedia.org/wiki/Deferent_and_epicycle" target="_blank" rel="noopener">epicycle&lt;/a>. Since the initialization for the chains are random every step, the generated curve also varies drastically and is extremely sensitive to initial conditions. However, unlike a multi-pendulum system, this is not chaotic, rather deterministic. This gives us the added benefit of parameterizing the model so we don&amp;rsquo;t depend on the previous step of the simulation to predict the next. The tip position is a closed-form function of time.&lt;/p>
+&lt;p>Link $i$ has length $L_i$, an initial angle $\varphi_i$, and an angular velocity $\omega_i$, so its angle at time $t$ is simply $\varphi_i + \omega_i t$. Summing the contributions down a chain of $N$ links from a pivot at $(x_0, y_0)$:&lt;/p>
+&lt;p>$$ x(t) = x_0 + \sum_{i=1}^{N} L_i \sin(\varphi_i + \omega_i t) $$&lt;/p>
+&lt;p>$$ y(t) = y_0 + \sum_{i=1}^{N} L_i \cos(\varphi_i + \omega_i t) $$&lt;/p>
+&lt;p>Or, treating the plane as the complex plane, which is much tidier:&lt;/p>
+&lt;p>$$ z(t) = z_0 + \sum_{i=1}^{N} L_i e^{i(\varphi_i + \omega_i t)} $$&lt;/p>
+&lt;p>With this parameterizion, we can now predict the state of the chain at any point in time and even look ahead many many steps in the future. Simulating the entire thing by stepping through frames of the sketch is really slow and dependent on the hardware capability of the machine it&amp;rsquo;s running on. This parameterizion actually fixes the issue as it is no longer dependent on the framerate.&lt;/p>
+&lt;p>The random points around the crawler anchor is generated using poisson disk sampling. Pure random (or even pseudo random) numbers have a tendency to cluster together, a phenomenon know as poisson clumping. Poisson disk sampling gives a uniform look to the randomly scattered points.&lt;/p>
+&lt;!-- TODO: #### Fourier Analysis on the Pendulum movement -->
+&lt;h4 id="motivation">Motivation&lt;/h4>
+&lt;!-- : Forms and Behavior -->
+&lt;p>This was largely inspired from the work &lt;code>Process Compendium&lt;/code> by Casey Reas. There he describes how a simple set of elements and interaction processes can lead to complex forms and behaviours. For Random Crawlers, this can be described simply as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.&lt;/p>
+&lt;p>&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.&lt;/p>
+&lt;p>&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
+&lt;/blockquote></description></item><item><title>I drew this with mathematical equations</title><link>https://tahsintariq.github.io/blog/voronoi-stippling/</link><pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/voronoi-stippling/</guid><description>&lt;style>
+.stipple-viewer { position: relative; aspect-ratio: 5 / 3; border: 2px solid #ed8e22; }
+.stipple-fps { position: absolute; top: 4px; left: 4px; padding: 1px 4px; border-radius: 3px; font: 11px/1.2 ui-monospace, Consolas, monospace; color: #fff; background: rgba(0, 0, 0, 0.5); pointer-events: none; }
+.stipple-viewer canvas { display: block; width: 100%; height: 100%; }
+.stipple-bar { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+#stipple-status { flex: 1 1 12rem; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stipple-settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.5rem 1.5rem; align-items: end; margin-top: 0.5rem; }
+.stipple-settings label { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0; font-size: 0.9rem; }
+.stipple-settings input[type=range] { width: 100%; }
+.stipple-settings output { font-variant-numeric: tabular-nums; opacity: 0.7; }
+.stipple-settings .stipple-check { justify-content: flex-start; gap: 0.4rem; align-items: center; }
+&lt;/style>
+&lt;div class="stipple-demo">
+&lt;div class="stipple-viewer">&lt;canvas id="stipple-canvas">&lt;/canvas>&lt;span id="stipple-fps" class="stipple-fps" aria-hidden="true">– fps&lt;/span>&lt;/div>
+&lt;img id="stipple-default" src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="" hidden>
+&lt;input id="stipple-upload" type="file" accept="image/*,video/*" hidden>
+&lt;div class="stipple-bar">
+&lt;button id="stipple-upload-btn" type="button" class="btn btn-sm btn-outline-primary">Upload photo or video&lt;/button>
+&lt;button id="stipple-camera" type="button" class="btn btn-sm btn-outline-primary">Use camera&lt;/button>
+&lt;button id="stipple-pause" type="button" class="btn btn-sm btn-outline-primary" disabled>Pause&lt;/button>
+&lt;button id="stipple-download" type="button" class="btn btn-sm btn-outline-primary">Download image&lt;/button>
+&lt;small id="stipple-status" class="text-muted" role="status">Photos and videos are processed on device and not uploaded elsewhere.&lt;/small>
+&lt;/div>
+&lt;details>
+&lt;summary>Settings&lt;/summary>
+&lt;div id="stipple-settings" class="stipple-settings">&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;script src="https://tahsintariq.github.io/js/voronoi-stipple.js">&lt;/script></description></item><item><title>Procedural Terrain Generation</title><link>https://tahsintariq.github.io/blog/terrain-generation/</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/terrain-generation/</guid><description>&lt;h3 id="introduction">Introduction&lt;/h3>
+&lt;p>Creating a terrain manually for a game or just for visualization purposes is a really daunting task. Instead, a better way to do so is to programmatically generate it by passing some parameters to a code. Here, I discuss how to make a procedural terrain generator mostly using processing for python. This can also be done in any other language or game engine or 3D design software. I will be making a simple terrain using height maps for stylized purposes. But, first we need to understand how to generate height maps using perlin noise.&lt;/p>
+&lt;p>Perlin noise is a procedurally generated noise texture developed by ken perlin. How perlin noise is generated using code is discussed thoroughly &lt;strong>&lt;a href="https://rtouti.github.io/graphics/perlin-noise-algorithm" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>&lt;/strong>. I&amp;rsquo;ll be using the built in noise function that generates perlin noise for processing.&lt;/p>
+&lt;h3 id="generating-sample-points">Generating sample points&lt;/h3>
+&lt;p>In order to render the terrain, we need some geometry. We can generate tile the plane with cubes, but that would look more like minecraft. We could choose randomly generated points. But purely random or even pseudo-random choices have a tendency of clustering together. This phenomenon is known as &lt;a href="https://en.wikipedia.org/wiki/Poisson_clumping" target="_blank" rel="noopener">&lt;code>Poisson Clumping&lt;/code>&lt;/a>. Pure or pseudo-random points are not good choices because of this phenomenon, as shown below.&lt;/p>
+&lt;!-- ![Random points](/img/random.png) -->
+&lt;figure id="figure-generated-random-points-tend-to-cluster-together">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/random.png" alt="Generated random points tend to cluster together." loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Generated random points tend to cluster together.
+&lt;/figcaption>&lt;/figure>
+&lt;p>So, instead we use a different sort of random point generation called &lt;a href="https://en.wikipedia.org/wiki/Supersampling#Poisson_disk" target="_blank" rel="noopener">&lt;code>Poisson Disc Sampling&lt;/code>&lt;/a>. This generates random points at a given interval and thus making them more uniform. This is a much better choice for generating terrains.&lt;/p>
+&lt;p>Now if we triangulate the points,We should get a plane with enough geometry to offset using the generated height map. I go into some details on triangulation &lt;a href="https://tahsintariq.github.io/triangulation" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>. The final result should look something like this (without the animation of course):&lt;/p>
+&lt;div class="videoWrapper">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/Delunay_triangulation"
+data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="creating-a-rough-3d-terrain">Creating a rough 3D terrain&lt;/h3>
+&lt;p>Now we rotate the canvas on the y-axis so it looks more like a plane.&lt;/p>
+&lt;!-- ![Random Plane](/img/random_plane.png) -->
+&lt;figure id="figure-the-entire-plane-rotated-along-the-y-axis-to-give-it-a-3d-look">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/random_plane.png" alt="The entire plane rotated along the Y-axis to give it a 3D look" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+The entire plane rotated along the Y-axis to give it a 3D look
+&lt;/figcaption>&lt;/figure>
+&lt;p>Now, using the generated height map, we offset the z-position of the points by the value corresponding to that x and y position in the height map. This gives us a stylized terrain.&lt;/p>
+&lt;!-- ![Terrain](/img/terrain.png) -->
+&lt;figure id="figure-a-generated-rough-terrain">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://tahsintariq.github.io/img/terrain.png" alt="A generated rough terrain" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+A generated rough terrain
+&lt;/figcaption>&lt;/figure>
+&lt;p>We can change the shape of this terrain by changing the noise using offsets. This can result in traversing through the terrain as if we were flying on top of it, or changing the entire topology of the terrain. It will depend on how the noise is being offset.&lt;/p>
+&lt;p>I&amp;rsquo;ve put the processing.py codes for this project &lt;a href="https://github.com/TahsinTariq/Processing/tree/master/Pycessing/Perlin/Terrain_generation" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>.&lt;/p>
+&lt;h3 id="smoother-surfaces">Smoother surfaces&lt;/h3>
+&lt;p>The generated surface is still pretty low resolution and looks pointy. This can be solved in two ways. First, we can either increase the number of points from the poisson disk sampling process. The other method is using the &lt;a href="https://en.wikipedia.org/wiki/Catmull%E2%80%93Clark_subdivision_surface" target="_blank" rel="noopener">&lt;code>Catmull-Clark algorithm&lt;/code>&lt;/a>. This is a technique used in 3D computer graphics to represent curved surfaces by the specification of a coarser polygonal mesh and produced by a recursive algorithmic method.&lt;/p>
+&lt;p>Furthermore, the same process can be used to generate terrain in 3D modelling software. The Catmull-Clark algorithm can be used easily here as most software have built in support. The following demonstrates the improvements made while using the algorithm.&lt;/p>
+&lt;div class="image-grid-container">
+&lt;div class="image-grid-row">
+&lt;div class="image-grid-item">
+&lt;figure.lightbox { margin: 0px; /* Remove default figure margins */ }>
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_1.png" alt="/img/terrain_blend_1.png" loading="lazy" data-zoomable class="img-fluid rounded" />
+&lt;/figure>
+&lt;/div>
+&lt;div class="image-grid-item">
+&lt;figure.lightbox { margin: 0px; /* Remove default figure margins */ }>
+&lt;img src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="/img/terrain_blend_2.png" loading="lazy" data-zoomable class="img-fluid rounded" />
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;p class="image-grid-caption">The left image shows a coarse pointy surface the right image shows a smooth, curved, subdivided surface and below is an animated terrain made in Blender 3D.&lt;/p>
+&lt;/div>
+&lt;style>
+.image-grid-container {
+display: flex;
+flex-direction: column;
+row-gap: 5px;
+margin-bottom: 1em;
+}
+.image-grid-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+.image-grid-item {
+flex: 1;
+min-width: 200px;
+text-align: center;
+}
+.image-grid-item img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.image-grid-caption {
+text-align: center;
+font-size: 0.9em;
+color: #666;
+margin-top: 0.5em;
+}
+&lt;/style>
+&lt;video controls loop autoplay>
+&lt;source src="https://tahsintariq.github.io/img/terrain_vid.mp4">
+&lt;/video>
+&lt;h3 id="example-videos">Example videos&lt;/h3>
+&lt;p>Below are two different renders I&amp;rsquo;ve made using the processing.py. One with a half inverted render and the other colored according to the height of the points i.e. a topological height map.&lt;/p>
+&lt;style>
+*.videoWrapper {
+position: relative;
+width:100%;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+}
+video{
+display:grid;
+margin: auto;
+width:90%;
+height:90%;
+}
+*.videoWrapper iframe{
+position: absolute;
+margin:auto;
+top: 0; bottom: 0;
+left: 0; right: 0;
+text-align: center;
+width: 90%;
+height: 90%;
+}
+*.grid{
+display: grid;
+place-items:center;
+/* width: 100%; */
+}
+&lt;/style>
+&lt;style> iframe{ border: none; } &lt;/style>
+&lt;div class="videoWrapper">
+&lt;iframe src="https://www.youtube.com/embed/kLhleR4t7LQ" data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;div class="videoWrapper">
+&lt;iframe src="https://www.youtube.com/embed/-vS37cZq3B8" data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;!-- "https://www.youtube.com/embed/kLhleR4t7LQ" -->
+&lt;!-- "https://www.youtube.com/embed/-vS37cZq3B8" --></description></item></channel></rss>

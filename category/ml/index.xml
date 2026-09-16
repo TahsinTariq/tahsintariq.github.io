@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ML | Tahsin Tariq Banna</title><link>https://tahsintariq.github.io/category/ml/</link><atom:link href="https://tahsintariq.github.io/category/ml/index.xml" rel="self" type="application/rss+xml"/><description>ML</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate><image><url>https://tahsintariq.github.io/media/logo_hu05f0f36ce171b899b64ba629782702e3_51428_300x300_fit_lanczos_3.png</url><title>ML</title><link>https://tahsintariq.github.io/category/ml/</link></image><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle/</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
+&lt;h3 id="features">Features&lt;/h3>
+&lt;ul>
+&lt;li>Uses the A* algorithm to find the shortest way to solve the puzzle&lt;/li>
+&lt;li>You can choose any image to show in the tiles. It will replace the numbers though.&lt;/li>
+&lt;li>The blank tile can also be controlled using hand gestures. It was trained using supervised learning on a custom dataset of over 5000 photos (all the photos are of me showing my hand to the camera 😄).&lt;/li>
+&lt;/ul>
+&lt;h3 id="controls">Controls&lt;/h3>
+&lt;div style="display:flex">
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+↑
+&lt;/div>
+&lt;div ALIGN=Center>
+← ↓ →
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Arrow keys
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+✋
+&lt;/div>
+&lt;div ALIGN=Center>
+👈 👇 👉
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Hand Gestures (using camera)
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;div style="flex:1;padding:0 1% 0 0">
+&lt;h1>
+&lt;div ALIGN=Center>
+W
+&lt;/div>
+&lt;div ALIGN=Center>
+A S D
+&lt;/div>
+&lt;/h1>
+&lt;!-- &lt;h3> -->
+&lt;div ALIGN=Center>
+Keyboard keys
+&lt;/div>
+&lt;!-- &lt;/h3> -->
+&lt;/div>
+&lt;/div>
+&lt;style>
+*.videoWrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+}
+*.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+*.grid{
+display: grid;
+place-items:center;
+width: 100%;
+}
+&lt;/style>
+&lt;h3 id="game">Game&lt;/h3>
+&lt;style> iframe{ border: none; } &lt;/style>
+&lt;div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/EightPuzzle"
+data-position="center center">
+&lt;/iframe>
+&lt;/div>
+&lt;!-- &lt;div class="videoWrapper" style="--aspect-ratio: 3 / 4;">
+&lt;iframe
+src="https://tahsintariq.github.io/p5js/P5_Sketches/P5_Web_Collection/EightPuzzle"
+data-position="center center">
+&lt;/iframe>
+&lt;/div> -->
+&lt;h3 id="code">Code&lt;/h3>
+&lt;p>Here&amp;rsquo;s the code for A* path finding algorithm that solves the puzzle:&lt;/p>
+&lt;!-- &lt;div class="alert alert-note">
+&lt;div>
+A Markdown callout is useful for displaying notices, hints, or definitions to your readers.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- &lt;style>
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* .gist-file */
+/* .gist-data {max-height: 700px; max-width: auto;} */
+.gistContainer {width: 75%; margin: 0 auto;}
+&lt;/style> -->
+&lt;!-- &lt;div class = "gistContainer">
+&lt;script src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js">&lt;/script>
+&lt;/div> -->
+&lt;!-- &lt;script src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js">&lt;/script> -->
+&lt;script type="application/javascript" src="https://gist.github.com/TahsinTariq/5c4ba6b74dd1279f6d4bcfea6a3cbefd.js">&lt;/script>
+&lt;!-- ```js
+function AStar(v1, v2){
+function route(v1, v2){
+if (parents[v2] != 'NONE'){route(v1, parents[v2])}
+path.push(v2)
+}
+parents = {}
+searched = []
+fcost = {}
+queue = {}
+parents[v1] = "NONE"
+gcost[v1] = 0
+fcost[v1] = h(v1)
+queue[v1] = fcost[v1]
+while (queue.length != 0){
+x = sortProperties(queue);
+node = x[0][0];
+delete queue[node];
+searched.push(node);
+if (node == v2){
+try{print("found");
+route(v1, v2);}
+catch{print('No path exists');}
+return 0;
+}
+hash_ = generatechild(node);
+for(let[n, c] of Object.entries(hash_)){
+if (c + gcost[node] &lt; gcost[n]){
+if (searched.includes(n)){continue;}
+else{
+gcost[n] = c + gcost[node];
+fcost[n] = (gcost[n] + h(n));
+parents[n] = node;
+if (!queue.hasOwnProperty(n)){queue[n] = fcost[n]}
+}
+}
+}
+}
+print('NO path Found')
+}
+``` -->
+&lt;!--
+&lt;div class="gallery-grid">
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00012_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00012__huc445cd5ad83025868edfc18b6cc1de2c_1802432_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00012_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00018_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00018__hu26bf9a1a94be4fa17eeaa173d2be47a8_1766519_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00018_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00022_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00022__hu402c86523824341693e48a5d479aaa85_1796260_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00022_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-artworks" href="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00029_.png" >
+&lt;img src="https://tahsintariq.github.io/media/albums/artworks/ComfyUI_00029__hu4b2cbb9f7b260be52d9f263b28eb7bc7_1742824_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="ComfyUI_00029_.png" width="750" height="421">
+&lt;/a>
+&lt;/div>
+&lt;/div> --></description></item></channel></rss>

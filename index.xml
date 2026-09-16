@@ -69,12 +69,40 @@ allowfullscreen>
 &lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.&lt;/p>
 &lt;p>&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.&lt;/p>
 &lt;p>&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
-&lt;/blockquote></description></item><item><title>Enhancing Agricultural Automation through Weather Invariant Soil Parameter Prediction Using Machine Learning</title><link>https://tahsintariq.github.io/publication/2024-ai_agri/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2024-ai_agri/</guid><description/></item><item><title>example title</title><link>https://tahsintariq.github.io/news/2023-phd-offer/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/news/2023-phd-offer/</guid><description>&lt;p>&lt;strong>more example&lt;/strong>&lt;/p>
+&lt;/blockquote></description></item><item><title>I drew this with mathematical equations</title><link>https://tahsintariq.github.io/blog/voronoi-stippling/</link><pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/voronoi-stippling/</guid><description>&lt;style>
+.stipple-viewer { position: relative; aspect-ratio: 5 / 3; border: 2px solid #ed8e22; }
+.stipple-fps { position: absolute; top: 4px; left: 4px; padding: 1px 4px; border-radius: 3px; font: 11px/1.2 ui-monospace, Consolas, monospace; color: #fff; background: rgba(0, 0, 0, 0.5); pointer-events: none; }
+.stipple-viewer canvas { display: block; width: 100%; height: 100%; }
+.stipple-bar { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+#stipple-status { flex: 1 1 12rem; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stipple-settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.5rem 1.5rem; align-items: end; margin-top: 0.5rem; }
+.stipple-settings label { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0; font-size: 0.9rem; }
+.stipple-settings input[type=range] { width: 100%; }
+.stipple-settings output { font-variant-numeric: tabular-nums; opacity: 0.7; }
+.stipple-settings .stipple-check { justify-content: flex-start; gap: 0.4rem; align-items: center; }
+&lt;/style>
+&lt;div class="stipple-demo">
+&lt;div class="stipple-viewer">&lt;canvas id="stipple-canvas">&lt;/canvas>&lt;span id="stipple-fps" class="stipple-fps" aria-hidden="true">– fps&lt;/span>&lt;/div>
+&lt;img id="stipple-default" src="https://tahsintariq.github.io/img/terrain_blend_2.png" alt="" hidden>
+&lt;input id="stipple-upload" type="file" accept="image/*,video/*" hidden>
+&lt;div class="stipple-bar">
+&lt;button id="stipple-upload-btn" type="button" class="btn btn-sm btn-outline-primary">Upload photo or video&lt;/button>
+&lt;button id="stipple-camera" type="button" class="btn btn-sm btn-outline-primary">Use camera&lt;/button>
+&lt;button id="stipple-pause" type="button" class="btn btn-sm btn-outline-primary" disabled>Pause&lt;/button>
+&lt;button id="stipple-download" type="button" class="btn btn-sm btn-outline-primary">Download image&lt;/button>
+&lt;small id="stipple-status" class="text-muted" role="status">Photos and videos are processed on device and not uploaded elsewhere.&lt;/small>
+&lt;/div>
+&lt;details>
+&lt;summary>Settings&lt;/summary>
+&lt;div id="stipple-settings" class="stipple-settings">&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;script src="https://tahsintariq.github.io/js/voronoi-stipple.js">&lt;/script></description></item><item><title>Enhancing Agricultural Automation through Weather Invariant Soil Parameter Prediction Using Machine Learning</title><link>https://tahsintariq.github.io/publication/2024-ai_agri/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2024-ai_agri/</guid><description/></item><item><title>example title</title><link>https://tahsintariq.github.io/news/2023-phd-offer/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/news/2023-phd-offer/</guid><description>&lt;p>&lt;strong>more example&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>example list 1&lt;/li>
 &lt;li>example list 2&lt;/li>
 &lt;li>example list 3&lt;/li>
-&lt;/ul></description></item><item><title>GEMM: A Graph Embedded Model for Memorability Prediction</title><link>https://tahsintariq.github.io/publication/2023-gemm_memorability/</link><pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2023-gemm_memorability/</guid><description/></item><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle-game/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle-game/</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
+&lt;/ul></description></item><item><title>GEMM: A Graph Embedded Model for Memorability Prediction</title><link>https://tahsintariq.github.io/publication/2023-gemm_memorability/</link><pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/publication/2023-gemm_memorability/</guid><description/></item><item><title>Eight-Puzzle Game</title><link>https://tahsintariq.github.io/blog/eight-puzzle/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/eight-puzzle/</guid><description>&lt;p>This is a JavaScript implementation of the classic 8-puzzle game. I&amp;rsquo;ve also built in an AI to solve the puzzle if you are stuck.&lt;/p>
 &lt;h3 id="features">Features&lt;/h3>
 &lt;ul>
 &lt;li>Uses the A* algorithm to find the shortest way to solve the puzzle&lt;/li>
