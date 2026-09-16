@@ -49,10 +49,10 @@ allowfullscreen>
 &lt;!-- : Forms and Behavior -->
 &lt;p>This was largely inspired from the work &lt;code>Process Compendium&lt;/code> by Casey Reas. There he describes how a simple set of elements and interaction processes can lead to complex forms and behaviours. For Random Crawlers, this can be described simply as follows:&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.&lt;/p>
-&lt;p>&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.&lt;/p>
-&lt;p>&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
-&lt;/blockquote></description></item><item><title>I drew this with mathematical equations</title><link>https://tahsintariq.github.io/blog/voronoi-stippling/</link><pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/voronoi-stippling/</guid><description>&lt;style>
+&lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.
+&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.
+&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
+&lt;/blockquote></description></item><item><title>Realtime Voronoi Stippling</title><link>https://tahsintariq.github.io/blog/voronoi-stippling/</link><pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/voronoi-stippling/</guid><description>&lt;style>
 .stipple-viewer { position: relative; aspect-ratio: 5 / 3; border: 2px solid #ed8e22; }
 .stipple-fps { position: absolute; top: 4px; left: 4px; padding: 1px 4px; border-radius: 3px; font: 11px/1.2 ui-monospace, Consolas, monospace; color: #fff; background: rgba(0, 0, 0, 0.5); pointer-events: none; }
 .stipple-viewer canvas { display: block; width: 100%; height: 100%; }

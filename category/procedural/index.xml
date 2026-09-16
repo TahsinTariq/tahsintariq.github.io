@@ -49,9 +49,9 @@ allowfullscreen>
 &lt;!-- : Forms and Behavior -->
 &lt;p>This was largely inspired from the work &lt;code>Process Compendium&lt;/code> by Casey Reas. There he describes how a simple set of elements and interaction processes can lead to complex forms and behaviours. For Random Crawlers, this can be described simply as follows:&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.&lt;/p>
-&lt;p>&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.&lt;/p>
-&lt;p>&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
+&lt;p>&lt;strong>Element 1.&lt;/strong> A point that moves along the sum of $N$ circular motions.
+&lt;strong>Element 2.&lt;/strong> Stationary points distributed uniformly along the plane.
+&lt;strong>Process.&lt;/strong> Draw a line from each Element 1 to every Element 2 within distance $d$.&lt;/p>
 &lt;/blockquote></description></item><item><title>Procedural Terrain Generation</title><link>https://tahsintariq.github.io/blog/terrain-generation/</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://tahsintariq.github.io/blog/terrain-generation/</guid><description>&lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>Creating a terrain manually for a game or just for visualization purposes is a really daunting task. Instead, a better way to do so is to programmatically generate it by passing some parameters to a code. Here, I discuss how to make a procedural terrain generator mostly using processing for python. This can also be done in any other language or game engine or 3D design software. I will be making a simple terrain using height maps for stylized purposes. But, first we need to understand how to generate height maps using perlin noise.&lt;/p>
 &lt;p>Perlin noise is a procedurally generated noise texture developed by ken perlin. How perlin noise is generated using code is discussed thoroughly &lt;strong>&lt;a href="https://rtouti.github.io/graphics/perlin-noise-algorithm" target="_blank" rel="noopener">&lt;code>here&lt;/code>&lt;/a>&lt;/strong>. I&amp;rsquo;ll be using the built in noise function that generates perlin noise for processing.&lt;/p>
