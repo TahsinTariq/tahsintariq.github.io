@@ -15,7 +15,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Lecturer
+role: Lecturer, CSE
 # Machine Learning Engineer
 
 # Organizations/Affiliations to show in About widget

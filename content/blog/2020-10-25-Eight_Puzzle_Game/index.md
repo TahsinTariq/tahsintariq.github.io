@@ -2,8 +2,8 @@
 title: Eight-Puzzle Game
 author: ["admin"]
 date: '2020-10-25'
-# slug: Eight-Puzzle Game
-categories: []
+slug: Eight-Puzzle
+categories: [AI, ML]
 tags: []
 image:
   caption: ''

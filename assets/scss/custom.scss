@@ -371,3 +371,13 @@ figure figcaption {
   break-inside: avoid;
   // padding-bottom: 0.5rem;
 }
+
+// The theme fixes the About section at `height: 100vh` and flex-centers its content. On short or
+// wide windows the content is taller than the screen, so centering pushes it up under the navbar
+// (and above the page top, where it can't be scrolled to). min-height lets the section grow instead.
+.wg-about {
+  @media screen and (min-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+  }
+}

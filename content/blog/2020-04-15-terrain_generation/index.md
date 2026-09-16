@@ -3,7 +3,7 @@ title: Procedural Terrain Generation
 author: ["admin"]
 date: '2020-04-15'
 slug: Terrain generation
-categories: []
+categories: [Generative Art, Procedural]
 tags: []
 image:
   caption: ''

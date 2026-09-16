@@ -3,7 +3,7 @@ title: Random Crawlers
 author: ["admin"]
 date: '2025-06-11'
 slug: Random Crawlers
-categories: []
+categories: [Generative Art, Procedural]
 tags: []
 # type: book
 image:
